@@ -1,0 +1,76 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.detail {
+    padding: 20px 0;
+    text-align: justify;
+}
+
+.detail h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    color: gold;
+}
+
+.detail p {
+    font-size: 15px;
+}
+
+.button {
+    text-align: center;
+}
+
+.button input {
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mycode {
+    display: none;
+}
+
+.mycode p {
+    text-align: center;
+    color: gold;
+    font-size: 20px;
+}
+
+.mycode table {
+    display: flex;
+    justify-content: center;
+}
+
+.mycode tr:first-child {
+    color: gold;
+    text-align: center;
+    font-size: 15px;
+}
+
+.mycode td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.mycode td:first-child {
+    text-align: center;
+}
+
+.mycode td:last-child {
+    text-align: center;
+}
+
+.footer {
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.8);
+    border-top: 1px solid gold;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.footer ul {
+    padding-left: 30px;
+}

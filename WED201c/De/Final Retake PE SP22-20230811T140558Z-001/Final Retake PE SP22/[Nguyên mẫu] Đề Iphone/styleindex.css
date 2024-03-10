@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.header li {
+    display: inline-block;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.header img {
+    height: 50px;
+    width: 50px;
+}
+
+.header button {
+    background-color: black;
+    color: white;
+}
+
+.ul {
+    margin: 0 10%;
+}
+
+.img {
+    margin: 0 4%;
+}
+
+.form {
+    margin-left: 27%;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    width: 21%;
+    background-color: #b3b7df;
+}
+
+.left p {
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.right {
+    width: 78%;
+    margin: 0 15px 40px 25px;
+}
+
+.right h1 {
+    text-align: center;
+    color: rgb(2, 223, 223);
+}
+
+.detail {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 8px gray;
+    padding: 10px;
+}
+
+
+.detail div {
+    text-align: justify;
+}
+
+.detail div p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.sale {
+    text-align: center;
+}
+
+.sub_sale {
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 8px gray;
+    padding-bottom: 50px;
+}
+
+.sub_sale img {
+    width: 100%;
+    height: auto;
+}
+
+.sub_sale p {
+    color: orange;
+}
+
+.sub_sale del {
+    color: gray;
+}
+
+.container {
+    display: flex;
+}
+
+.footer {
+    background-color: rgb(43, 41, 41);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}

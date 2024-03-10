@@ -1,0 +1,239 @@
+CREATE DATABASE BOOK_MANAGEMENT
+USE BOOK_MANAGEMENT
+
+--CREATE NEW TABLES
+CREATE TABLE Book_Publisher(
+	PublisherID CHAR(6) PRIMARY KEY,
+	PublisherName NVARCHAR(50) NOT NULL UNIQUE,
+)
+
+CREATE TABLE Book_Author(
+	AuthorID CHAR(5) PRIMARY KEY,
+	AuthorName NVARCHAR(50) NOT NULL UNIQUE,
+)
+
+CREATE TABLE Book_Shelf(
+	ShelfID CHAR(1) PRIMARY KEY,
+	ShelfName NVARCHAR(50) NOT NULL UNIQUE,
+)
+
+CREATE TABLE Book_Type(
+	TypeID CHAR(3) PRIMARY KEY,
+	TypeName NVARCHAR(50) NOT NULL UNIQUE,
+)
+
+CREATE TABLE Student_Major(
+	MajorID CHAR(2) PRIMARY KEY,
+	MajorName NVARCHAR(50) NOT NULL UNIQUE, 
+)
+
+CREATE TABLE Book(
+	BookID CHAR(4) PRIMARY KEY,
+	BookTitle NVARCHAR(50) NOT NULL UNIQUE,
+	BookPublisherID CHAR(6),
+	BookAuthorID CHAR(5),
+	BookPageNum INT CHECK (BookPageNum > 5),
+	BookQuantity INT CHECK (BookQuantity > 1), 
+	BookPrice FLOAT CHECK (BookPrice > 0),
+	DateGetIn DATETIME2(0), 
+	BookPlaceID CHAR(1),
+	BookTypeID CHAR(3),
+)
+
+CREATE TABLE Student(
+	StudentID CHAR(4) Primary Key,
+	StudentName NVARCHAR(50) NOT NULL UNIQUE,
+	DateValue DATETIME2(0),
+	StudentMajorID CHAR(2),
+	StudentEmail NVARCHAR(255),
+	StudentPhoneNum NVARCHAR(20),
+)
+
+CREATE TABLE Borrow_Book(
+	BorrowID CHAR(5) Primary Key,
+	BookID CHAR(4),
+	StudentID CHAR(4),
+	DateBorrow DATETIME2(0),
+	DateReturn NVARCHAR(30),
+	BorrowStatus NVARCHAR(10) CHECK (BorrowStatus IN ('Borrowing', 'Returned'))
+)
+--INPUT DATA INTO TABLES
+
+--Book_Publisher
+INSERT INTO Book_Publisher
+	VALUES('PL0001', N'Nhà Xuất Bản Trẻ')
+INSERT INTO Book_Publisher
+	VALUES('PL0002', N'Nhà Xuất Bản Kim Đồng')
+INSERT INTO Book_Publisher
+	VALUES('PL0003', N'Nhà Xuất Bản Hội Nhà Văn')
+INSERT INTO Book_Publisher
+	VALUES('PL0004', N'Nhà Xuất Bản Lao Động')
+INSERT INTO Book_Publisher
+	VALUES('PL0005', N'Nhà Xuất Bản Phụ Nữ Việt Nam')
+INSERT INTO Book_Publisher
+	VALUES('PL0006', N'Nhã Nam')
+INSERT INTO Book_Publisher
+	VALUES('PL0007', N'Đinh Tị Books')
+INSERT INTO Book_Publisher
+	VALUES('PL0008', N'Đông A')
+INSERT INTO Book_Publisher
+	VALUES('PL0009', N'Sky Books')
+
+--Book_Author
+INSERT INTO Book_Author
+	VALUES('A0001', N'Hồ Anh Thái')
+INSERT INTO Book_Author
+	VALUES('A0002', N'Nguyễn Vĩnh Nguyên')
+INSERT INTO Book_Author
+	VALUES('A0003', N'Nguyễn Trương Quý')
+INSERT INTO Book_Author
+	VALUES('A0004', N'Đỗ Bích Thúy')
+INSERT INTO Book_Author
+	VALUES('A0005', N'Nguyễn Mai Chi')
+INSERT INTO Book_Author
+	VALUES('A0006', N'Nguyễn Nhật Ánh')
+INSERT INTO Book_Author
+	VALUES('A0007', N'Trang Hạ')
+INSERT INTO Book_Author
+	VALUES('A0008', N'Nguyễn Phong Việt')
+INSERT INTO Book_Author
+	VALUES('A0009', N'Anh Khang')
+
+--Book_Shelf
+INSERT INTO Book_Shelf
+	VALUES('G', N'Tầng Trệt')
+INSERT INTO Book_Shelf
+	VALUES('1', N'Tầng Một')
+INSERT INTO Book_Shelf
+	VALUES('2', N'Tầng Hai')
+INSERT INTO Book_Shelf
+	VALUES('3', N'Tầng Ba')
+INSERT INTO Book_Shelf
+	VALUES('4', N'Tầng Bốn')
+INSERT INTO Book_Shelf
+	VALUES('5', N'Tầng Năm')
+INSERT INTO Book_Shelf
+	VALUES('6', N'Tầng Sáu')
+
+--Book_Type
+INSERT INTO Book_Type
+	VALUES('LAW', N'Sách Pháp Luật')
+INSERT INTO Book_Type
+	VALUES('SCI', N'Sách Khoa Học')
+INSERT INTO Book_Type
+	VALUES('ECN', N'Sách Kinh Tế')
+INSERT INTO Book_Type
+	VALUES('GDS', N'Sách Thiết Kế Mỹ Thuật Số')
+INSERT INTO Book_Type
+	VALUES('AIT', N'Sách Trí Tuệ Nhân Tạo')
+INSERT INTO Book_Type
+	VALUES('SEN', N'Sách Kỹ Thuật Phầm Mềm')
+INSERT INTO Book_Type
+	VALUES('MKT', N'Sách Marketing')
+INSERT INTO Book_Type
+	VALUES('MTM', N'Sách Truyền Thông Đa Phương Tiện')
+INSERT INTO Book_Type
+	VALUES('JPD', N'Sách Tiếng Nhật')
+
+--Student_Major
+INSERT INTO Student_Major
+	VALUES('GD', N'Thiết Kế Mỹ Thuật Số')
+INSERT INTO Student_Major
+	VALUES('SE', N'Kỹ Thuật Phần Mềm')
+INSERT INTO Student_Major
+	VALUES('BI', N'Kinh Doanh Quốc Tế')
+INSERT INTO Student_Major
+	VALUES('MK', N'Marketing')
+INSERT INTO Student_Major
+	VALUES('SS', N'Kinh Tế')
+INSERT INTO Student_Major
+	VALUES('SA', N'Ngôn Ngữ')
+INSERT INTO Student_Major
+	VALUES('AI', N'Trí Tuệ Nhân Tạo')
+INSERT INTO Student_Major
+	VALUES('IA', N'An Ninh Mạng')
+
+--Book
+INSERT INTO Book
+	VALUES('B001', N'Cõi Người Rung Chuông Tận Thế', 'PL0001', 'A0001', '54', '4', '54000', '2015-01-09 21:26:40', 'G', 'MTM')
+INSERT INTO Book
+	VALUES('B002', N'Tờ Khai Visa', 'PL0003', 'A0001', '102', '5', '89000', '2018-02-18 19:35:45', '4', 'LAW')
+INSERT INTO Book
+	VALUES('B003', N'Đà Lạt Một Thời Hương Xa', 'PL0008', 'A0002', '25', '6', '45000', '2017-05-09 22:10:00', '2', 'AIT')
+INSERT INTO Book
+	VALUES('B004', N'Còn Ai Hát Về Hà Nội', 'PL0004', 'A0003', '78', '2', '102000', '2019-07-14 09:26:20', '1', 'SEN')
+INSERT INTO Book
+	VALUES('B005', N'Những Tọa Độ Song Song', 'PL0006', 'A0005', '87', '3', '99000', '2021-12-09 04:30:20', '5', 'GDS')
+INSERT INTO Book
+	VALUES('B006', N'Lặng Yên Dưới Vực Sâu', 'PL0007', 'A0004', '98', '10', '115000', '2014-08-14 19:45:58', '3', 'JDP')
+
+--Student
+INSERT INTO Student
+	VALUES('S001', N'Đỗ Thế Hiếu','2025-08-26 23:59:59', 'SE', N'hieudtse170041@fpt.edu.vn', N'0967475325')
+INSERT INTO Student
+	VALUES('S002', N'Nguyễn Hoàng Đạt','2025-08-26 23:59:59', 'SE', N'datnhse170330@fpt.edu.vn', N'0966548257')
+INSERT INTO Student
+	VALUES('S003', N'Đào Hoài Phương','2025-08-28 23:59:59', 'SE', N'phuongdhse170524@fpt.edu.vn', N'0985457216')
+INSERT INTO Student
+	VALUES('S004', N'Nguyễn Trường Thọ','2025-09-15 23:59:59', 'SE', N'thontse171441@fpt.edu.vn', N'0967456825')
+INSERT INTO Student
+	VALUES('S005', N'Lê Ngọc Thanh Trúc','2026-08-26 23:59:59', 'GD', N'truclntse184843@fpt.edu.vn', N'0387774541')
+
+--Borrow_Book
+INSERT INTO Borrow_Book
+	VALUES('BR001', 'B002', 'S001', '2023-01-01 13:00:00', '2023-02-05 15:00:02', N'Returned')
+INSERT INTO Borrow_Book
+	VALUES('BR002', 'B001', 'S002', '2023-01-12 18:00:00', '2023-03-16 11:07:28', N'Returned')
+INSERT INTO Borrow_Book
+	VALUES('BR003', 'B003', 'S004', '2023-01-21 16:00:00', '0000-00-00 00:00:00', N'Borrowing')
+INSERT INTO Borrow_Book
+	VALUES('BR004', 'B004', 'S005', '2023-01-28 09:00:00', '0000-00-00 00:00:00', N'Borrowing')
+INSERT INTO Borrow_Book
+	VALUES('BR005', 'B005', 'S003', '2023-02-18 08:00:00', '0000-00-00 00:00:00', N'Borrowing')
+
+ALTER TABLE Book
+	ADD Constraint FK_Book_BookPublisherID_Book_PublisherPublisherID
+		Foreign Key (BookPublisherID) References Book_Publisher(PublisherID)
+
+ALTER TABLE Book
+	ADD Constraint FK_Book_BookAuthorID_Book_AuthorAuthorID
+		Foreign Key (BookAuthorID) References Book_Author(AuthorID)
+
+ALTER TABLE Book
+	ADD Constraint FK_Book_BookPlaceID_Book_ShelfShelfID
+		Foreign Key (BookPlaceID) References Book_Shelf(ShelfID)
+
+SELECT * FROM Book_Publisher
+SELECT * FROM Book_Author
+SELECT * FROM Book_Shelf
+SELECT * FROM Book_Type
+SELECT * FROM Student_Major
+SELECT * FROM Book
+SELECT * FROM Student
+SELECT * FROM Borrow_Book
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

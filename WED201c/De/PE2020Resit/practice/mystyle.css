@@ -1,0 +1,75 @@
+header {
+    background-color: chocolate;
+}
+
+header nav {
+    text-align: right;
+    font-size: x-large;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: aliceblue;
+}
+
+footer {
+    clear: both;
+    background-color: chocolate;
+    font-size: smaller;
+    text-align: center;
+    padding: 1px;
+}
+
+.left {
+    float : left;
+    text-align: center;
+    width: 30%;
+}
+
+.left ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.left ul li {
+    font-size: x-large;
+    color: gray;
+    border-bottom: 1px solid chocolate;
+    margin: 30px;
+}
+
+.left ul li:hover {
+    background-color: chocolate;
+    color: aliceblue;
+}
+
+.right {
+    float: right;
+    width: 69%;
+    border-left: 2px solid chocolate;
+}
+
+.right h1 {
+    color: chocolate;
+    font-weight: 100;
+    margin: 5px;
+}
+
+.right p {
+    margin: 5px 0;
+}
+
+button {
+    background-color: chocolate;
+}
+
+td {
+    display: inline-block;
+}
+
+#show {
+    display: none;
+    width: 400px;
+    height: 160px;
+}

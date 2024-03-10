@@ -1,0 +1,110 @@
+* {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.header {
+    background-color: rgb(255, 255, 92);
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.header h1 {
+    font-size: 46px;
+    margin-bottom: 3rem;
+}
+
+.header a {
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 1.2rem 10rem;
+}
+
+.header a:first-child {
+    margin-right: 2rem;
+}
+
+.content {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+#left {
+    float: left;
+    width: 45%;
+    margin-right: 2rem;
+}
+
+#right {
+    /* float: left;
+    width: 45%; */
+    display: inline-block;
+}
+
+#para2 {
+    display: none;
+}
+
+#para3 {
+    color: blue;
+}
+
+.footer {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(255, 255, 92);
+    text-transform: uppercase;
+}
+
+
+/* Mobile: width < 740px */
+
+@media only screen and (max-width: 739px) {
+    .header {
+        height: 10%;
+    }
+    .header h1 {
+        font-size: 30px;
+        margin-bottom: 2rem;
+    }
+    .header a {
+        border-radius: 50px;
+        padding: 0.1rem 0.1rem;
+        margin-bottom: 1rem;
+    }
+    .header a:first-child {
+        margin-right: 0.1rem;
+    }
+}
+
+
+/* PC: width >= 1024px */
+
+@media only screen and (min-width: 1033px) {}
+
+
+/* Tablet: width >= 740px and width < 1024px */
+
+@media only screen and (min-width: 740px) and (max-width: 1032px) {
+    .header {
+        height: 20%;
+    }
+    .header h1 {
+        font-size: 46px;
+        margin-bottom: 2rem;
+    }
+    .header a {
+        padding: 0.5rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .header a:first-child {
+        margin-right: 0.5rem;
+    }
+}

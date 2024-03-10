@@ -1,0 +1,119 @@
+body {
+    border: 2px solid rgb(49, 160, 201);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 4%;
+}
+
+.imgH img {
+    width: 100px;
+}
+
+.menuH ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.menuH ul li a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    color: lightseagreen;
+}
+
+.search button {
+    background-color: black;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    padding: 0 5%;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.detail h1 {
+    color: lightseagreen;
+    font-size: 30px;
+    text-align: center;
+}
+
+.detail p {
+    color: orange;
+    font-style: italic;
+    padding: 0 1%;
+}
+
+.tour {
+    display: flex;
+    justify-content: center;
+}
+
+.headtitle {
+    background-color: lightseagreen;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px 10px 30px;
+}
+
+.form {
+    background-color: grey;
+    width: 358px;
+}
+
+.formsubmit {
+    display: inline-block;
+}
+
+.formname {
+    display: inline-block;
+    width: 118px;
+}
+
+.formsubmit input {
+    width: 130px;
+}
+
+#tour {
+    width: 137.2px;
+}
+
+#date {
+    width: 133px;   
+}
+
+#date2 {
+    width: 133px;
+}
+
+.footer {
+    margin-top: 10px;
+    background-color: rgb(49, 160, 201);
+    color: white;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+}
+
+.footer .copyright {
+    clear: both;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer .left {
+    float: left;
+    padding-left: 30%;
+}
+
+.footer .right {
+    float: right;
+    padding-right: 30%;
+}   

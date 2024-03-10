@@ -1,0 +1,10 @@
+				 Aboard Program Registration Form
+Information Student:
+Student id: SE004   Student name: Do The Hieu
+Major: SE           Email: hieudtse004@fpt.edu.vn    Phone: 0987685321    Passport: VN004
+Address: KTX Khu B  Email of the parents: huhauh@gmail.com   Phone of the parents: 0946573821
+Information of the aboard program:
+Program’s id: CSD   Program’s name: Data Structures and Algorithms
+Time: May           Days: 40    Location: Viet Nam   Cost: 500.000000$
+Information of the registration:
+Registration date: 04/04/2022

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ultimate Frisbee - Home</title>
+    <link rel="stylesheet" href="css/hw1.css">
+    <script src="js/mycode.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ulimate Frisbee</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Teams</a>
+            <a href="#">History</a>
+
+        </nav>
+    </header>
+    <section class="top">
+        <a href="https://commons.wikimedia.org/wiki/File%3AUltimate_Frisbee%2C_Jul_2009_-_17.jpg"><img src="images/left1.jpg" alt="Creative Common Ultimate Photo" title="By Ed Yourdon [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons" /> </a>
+
+        <a href="https://commons.wikimedia.org/wiki/File%3AUltimate_Frisbee_Colorado_Cup_2005.jpg"><img alt="Ultimate Frisbee Colorado Cup 2005" src="images/left2.jpg" /></a>
+
+        <a href="https://www.flickr.com/photos/paradisecoastie/15409853738/" title="Ultimate Frisbee"><img src="images/left3.jpg" alt="Ultimate Frisbee"></a>
+    </section>
+    <section class="bottom">
+        <h2>Watch your Head </h2>
+        <p>Ultimate Frisbee is a sport that I never played myself, but it's popularity is something hard to ignore in many Midwestern college towns. Students (and people who wish they were still students) spend the few briefs months of good weather, sprinting
+            down fields, hurling frisbees, and yelling "Stack!!".</p>
+        <p>What I find much more entertaining is the large number of people who continue to play when the weather gets windy and the night sky darkens around oh....4:15pm. The sight of frisbees boomeranging in the wind is topped only by the knowledge that
+            even when you can't seem, those same plastic discs of death are probably hurtling through the dark night sky at 8 or 9 o'clock in the evening.
+        </p>
+        <p>Ultimate Frisbee requires a great deal of stamina and dexterity. Not surprisingly, the <abbr title="International Olympic Committee">IOC</abbr> officially recognized Ultimate as a sport in 2015. It can go up against other sports for inclusion
+            in Olympic games.</p>
+        <p id="showmore" onClick="show()">SHOW MORE</p>
+        <table id="team" cellspacing="0">
+            <tr>
+                <th>Team Name</th>
+                <th>Location</th>
+                <th>League Type</th>
+            </tr>
+            <tr>
+                <td>Afterburn - Air Force</td>
+                <td>Colorado</td>
+                <td>Men's</td>
+            </tr>
+            <tr>
+                <td>Cold Front (Bates College)</td>
+                <td>Maine</td>
+                <td>Women's</td>
+            </tr>
+            <tr>
+                <td>Disco Inferno (Brown University)</td>
+                <td>Rhode Island</td>
+                <td>Women's</td>
+            </tr>
+            <tr>
+                <td>Bad Habit (Catholic University)</td>
+                <td>Washington DC</td>
+                <td>Men's</td>
+            </tr>
+            <tr>
+                <td>Jive Turkeys (Dickinson College)</td>
+                <td>Pennsylvania</td>
+                <td>Both</td>
+            </tr>
+            <tr>
+                <td>Knights of the Round Disc(Longwood College)</td>
+                <td>Virginia</td>
+                <td>Men's</td>
+            </tr>
+            <tr>
+                <td>Ninjas (University of Minnesota)</td>
+                <td>Minnesota</td>
+                <td>Women's</td>
+            </tr>
+            <tr>
+                <td>Flying Squirrels (Hendrix College)</td>
+                <td>Arizona</td>
+                <td>Men's</td>
+            </tr>
+            <tr>
+                <td>Superfly (Yale)</td>
+                <td>Connecticut</td>
+                <td>Men's</td>
+            </tr>
+            <tr>
+                <td>Flywheel (University of Michigan</td>
+                <td>Michigan</td>
+                <td>Women's</td>
+            </tr>
+        </table>
+        <table id="myform">
+            <caption> contact us</caption>
+            <tr>
+                <td>email</td>
+                <td><input type="text" id="email">*</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" id="USA"> USA Ultimate Frisbee
+                    <input type="checkbox" id="UK"> UK Ultimate Frisbee
+                </td>
+            </tr>
+            <tr>
+                <td>captcha: cVr12TY</td>
+                <td><input type="text">*</td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="button" value="submit" onClick="check()"></td>
+            </tr>
+        </table>
+
+    </section>
+
+    </main>
+</body>
+
+</html>

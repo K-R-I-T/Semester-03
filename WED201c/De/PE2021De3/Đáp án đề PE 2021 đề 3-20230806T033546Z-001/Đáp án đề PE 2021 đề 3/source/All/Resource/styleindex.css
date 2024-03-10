@@ -1,0 +1,30 @@
+body {
+    background-color: #aaa;
+}
+
+.container {
+    background-color: #fff;
+}
+
+.row:nth-child(3) {
+    text-align: center;
+}
+
+div>h2 {
+    font-size: 19px;
+    color: blue;
+    text-align: center;
+}
+
+.row:nth-child(4) div p {
+    color: red;
+    text-align: center;
+}
+
+.row:last-child {
+    background-color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+}

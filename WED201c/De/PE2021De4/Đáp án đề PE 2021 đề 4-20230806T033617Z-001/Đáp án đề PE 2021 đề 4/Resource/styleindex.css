@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(175, 175, 175);
+}
+
+.btn {
+    background-color: #99cc33;
+}
+
+.row:nth-child(4)>div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row:nth-child(5),
+.row:nth-child(6) {
+    background-color: rgb(255, 121, 143);
+}
+
+.welcome div:first-child {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.welcome div:nth-child(2) {
+    color: #fff;
+    text-align: center;
+}
+
+.welcome div:nth-child(2) p {
+    padding: 10px 250px;
+    font-size: 26px;
+    font-family: "Brush Script MT", cursive;
+}
+
+.welcome div:nth-child(3) button {
+    background-color: #fff;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.welcome div:nth-child(3) {
+    text-align: center;
+}
+
+.two-image {
+    padding-bottom: 40px;
+}
+
+.row:nth-child(7),
+.four-img {
+    background-color: rgb(253, 221, 226);
+}
+
+.four-img {
+    margin: 0 -15px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.four-img div {
+    width: 20%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+
+.four-img div img {
+    margin: 20px 20px;
+}
+
+.four-img div button {
+    margin-bottom: 20px;
+    background-color: pink;
+}
+
+.row:last-child {
+    background-color: rgb(255, 121, 143);
+}
+
+.row:last-child div {
+    margin-top: 10px;
+    float: left;
+    color: white;
+    padding-right: 10px;
+}

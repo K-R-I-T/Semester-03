@@ -1,0 +1,92 @@
+* {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: green;
+    height: 100px;
+    font-size: 20px;
+}
+
+header nav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 40px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10%;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.aboutme form {
+    display: flex;
+    justify-content: center;
+}
+
+.howtogrow {
+    display: flex;
+    justify-content: center;
+}
+
+.howtogrow p {
+    margin: 20px;
+    width: 100%;
+}
+
+.howtogrow p::first-letter {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#frame {
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.row img {
+    width: 80px;
+    height: 100px;
+    margin: 0 1%;
+}
+
+footer {
+    background-color: lightgreen;
+    height: 100px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding-top: 25px;
+}
+
+footer p::first-letter {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: larger;
+}

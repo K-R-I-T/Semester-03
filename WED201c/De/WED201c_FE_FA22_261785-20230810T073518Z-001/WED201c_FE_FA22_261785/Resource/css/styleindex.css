@@ -1,0 +1,91 @@
+.header div:first-child img {
+    height: 50px;
+    width: 70px;
+}
+
+.header div:last-child {
+    margin-top: 10px;
+}
+
+.header div:last-child a {
+    color: blue;
+}
+
+.left h1 {
+    color: orangered;
+    margin: 0;
+}
+
+.left p {
+    text-align: justify;
+    font-size: 17px;
+}
+
+.left div img {
+    margin: 0 auto;
+}
+
+.right {
+    background-color: lightcyan;
+}
+
+.right img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.right h3:first-child {
+    color:orangered;
+    border-bottom: 3px solid blue;
+    margin: 0;
+}
+
+.right {
+    padding-right: 0;
+    padding-top: 10px;
+}
+
+.right div {
+    display: flex;
+    margin-top: 20px;
+}
+
+.bottom h1 {
+    text-align: center;
+    color: orangered;
+}
+
+.bottom p {
+    font-size: 17px;
+    text-align: justify;
+    margin: 15px;
+}
+
+.bottom div div {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom div div img {
+    width: 76%;
+}
+
+.bottom div div .buffet {
+    width: 38%;
+}
+
+.footer {
+    margin-top: 15px;
+    text-align: center;
+    color: aliceblue;
+    background-color: lightseagreen;
+}
+
+.navbar-toggle {
+    background-color: green;
+}
+
+.icon-bar {
+    border-top: 2px solid white;
+}

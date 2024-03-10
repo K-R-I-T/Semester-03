@@ -1,0 +1,36 @@
+header {
+    background-color: darkgray;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+a {
+    background-color: lightgrey;
+    color: black;
+}
+
+main {
+    background-color: gray;
+}
+
+.left {
+    display: none;
+}
+
+.right h2 {
+    text-transform: uppercase;
+    color: darkblue;
+}
+
+.right p {
+    font-weight: 550;
+}
+
+abbr[title] {
+    text-decoration: none;
+}

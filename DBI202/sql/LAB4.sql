@@ -1,0 +1,34 @@
+﻿Create database LAB4
+use LAB4
+
+CREATE TABLE Worker(
+WORKER_ID VARCHAR(3) PRIMARY KEY,
+FIRST_NAME VARCHAR(20),
+LAST_NAME VARCHAR(20),
+SALARY FLOAT(10),
+JOINING_DATE DATETIME2(0),
+DEPARTMENT VARCHAR(20)
+);
+
+CREATE TABLE Bonus (
+WORKER_REF_ID INT PRIMARY KEY,
+BONUS_DATE DATETIME2(0),
+BONUS_ACCOUNT FLOAT(10)
+);
+
+CREATE TABLE Title (
+WORKER_REF_ID INT PRIMARY KEY,
+WORKER_TITLE VARCHAR(10),
+AFFECTED_FROM DATETIME2(0)
+);
+
+-- Q-1. Write an SQL query to fetch “FIRST_NAME” from Worker table using the alias name as <WORKER_NAME>.
+SELECT * FROM Worker
+INSERT INTO Worker VALUES('001', 'Monika', 'Arora', 100000, '2014-2-20 9:0:0', 'HR')
+INSERT INTO Worker VALUES('002', 'Niharika', 'Verma', 80000, '2014-6-11 9:0:0', 'Admin')
+INSERT INTO Worker VALUES('003', 'Vishal', 'Singhal', 300000, '2014-2-20 9:0:0', 'HR')
+INSERT INTO Worker VALUES('004', 'Amitabh', 'Singh', 500000, '2014-2-20 9:0:0', 'Admin')
+INSERT INTO Worker VALUES('005', 'Vivek', 'Bhati', 500000, '2014-6-11 9:0:0', 'Admin')
+INSERT INTO Worker VALUES('006', 'Vipul', 'Diwan', 200000, '2014-6-11 9:0:0', 'Account')
+INSERT INTO Worker VALUES('007', 'Satish', 'Kumar', 75000, '2014-1-20 9:0:0', 'Account')
+INSERT INTO Worker VALUES('008', 'Geetika', 'Chauhan', 90000, '2014-4-11 9:0:0', 'Admin')

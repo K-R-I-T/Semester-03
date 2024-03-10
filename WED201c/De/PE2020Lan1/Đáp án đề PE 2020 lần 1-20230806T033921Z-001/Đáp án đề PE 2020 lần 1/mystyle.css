@@ -1,0 +1,91 @@
+header {
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    color: gray;
+    text-align: center;
+}
+
+header nav a {
+    margin-right: 17%;
+    margin-left: 10%;
+    font-size: larger;
+}
+
+.left {
+    float: left;
+    background-color: lightblue;
+    border-radius: 5px;
+    font-size: large;
+    height: 50%;
+    width: 20%;
+}
+
+.left ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.left ul li {
+    background-color: blue;
+    color: darkgray;
+    text-align: center;
+    margin: 2px 10px 3px 3px;
+}
+
+.left ul li:hover {
+    background-color: darkgray;
+    color: blue;
+}
+
+.left p {
+    padding-left: 3px;
+    margin-bottom: 0;
+}
+
+.left input {
+    margin-left: 3px;
+}
+
+.left textarea {
+    margin-left: 3px;
+}
+
+.left select {
+    margin-left: 3px;
+}
+
+.left button {
+    margin-left: 3px;
+}
+
+.right {
+    float: right;
+    background-color: lightblue;
+    border-radius: 5px;
+    width: 78%;
+    height: 50%;
+    margin-bottom: 15px;
+    font-size: large;
+    padding-left: 20px;
+}
+
+.right p::first-line {
+    color: blue;
+    font-size: larger;
+    font-weight: 900;
+}
+
+footer {
+    clear: both;
+    background-color: lightblue;
+    border-radius: 5px;
+    text-align: center;
+    font-size: small;
+    font-weight: 500;
+    padding: 1px;
+}

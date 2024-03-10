@@ -1,0 +1,10 @@
+				 Aboard Program Registration Form
+Information Student:
+Student id: SE003   Student name: Dao Hoai Phuong
+Major: SE           Email: phuongdhse003@fpt.edu.vn    Phone: 0312456789    Passport: VN003
+Address: KTX Khu B  Email of the parents: hahah@gmail.com   Phone of the parents: 0981726354
+Information of the aboard program:
+Program’s id: QN    Program’s name: Quy nhon
+Time: September     Days: 40    Location: Quy nhon   Cost: 1000.000000$
+Information of the registration:
+Registration date: 05/06/2023

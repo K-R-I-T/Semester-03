@@ -1,0 +1,10 @@
+				 Aboard Program Registration Form
+Information Student:
+Student id: SE001   Student name: Nguyen Hoang Dat
+Major: SE           Email: datnhse001@fpt.edu.vn    Phone: 0966548257    Passport: VN001
+Address: KTX Khu B  Email of the parents: nguyenhoangdat@gmail.com   Phone of the parents: 0905094849
+Information of the aboard program:
+Program’s id: E6O   Program’s name: English 6 Oversea
+Time: March         Days: 35    Location: Malaysia   Cost: 1500.000000$
+Information of the registration:
+Registration date: 12/02/2023

@@ -1,0 +1,10 @@
+				 Aboard Program Registration Form
+Information Student:
+Student id: SE001   Student name: Nguyen Hoang Dat
+Major: SE           Email: datnhse001@fpt.edu.vn    Phone: 0966548257    Passport: VN001
+Address: KTX Khu B  Email of the parents: hoangdat@gmail.com   Phone of the parents: 0987654356
+Information of the aboard program:
+Program’s id: QN    Program’s name: Quy nhon
+Time: September     Days: 40    Location: Quy nhon   Cost: 1000.000000$
+Information of the registration:
+Registration date: 06/06/2023

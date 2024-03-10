@@ -1,0 +1,113 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+}
+
+.row:nth-child(3),
+.row:nth-child(4) {
+    color: #fff;
+}
+
+.row:nth-child(3) div:first-child,
+.row:nth-child(4) div:first-child,
+.row:nth-child(3) div:last-child,
+.row:nth-child(4) div:last-child {
+    width: 50%;
+    float: left;
+    padding: 10px 15px;
+}
+
+.row:nth-child(3) div:first-child div,
+.row:nth-child(4) div:first-child div,
+.row:nth-child(3) div:last-child div,
+.row:nth-child(4) div:last-child div {
+    display: inline-block;
+    width: 50%;
+    text-align: justify;
+}
+
+h2 {
+    color: orange;
+    text-align: center;
+}
+
+.row:nth-child(5) {
+    width: 100%;
+    text-align: center;
+}
+
+.row:nth-child(5) div input {
+    background-color: rgb(175, 114, 2);
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#mydiv {
+    display: none;
+}
+
+.mycode {
+    color: #fff;
+    text-align: center;
+}
+
+.mycode table {
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+
+.mycode table tr:first-child,
+.mycode p {
+    color: yellow;
+}
+
+.mycode table td {
+    border: 1px solid #fff;
+    padding: 10px 10px;
+}
+
+.mycode table tr:not(tr:first-child) td:nth-child(2) {
+    text-align: left;
+}
+
+.footer {
+    color: #fff;
+    background-color: rgb(112, 112, 112);
+    width: 100%;
+    border-top: 2px solid orange;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.footer div {
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .row:nth-child(3) div:first-child,
+    .row:nth-child(4) div:first-child,
+    .row:nth-child(3) div:last-child,
+    .row:nth-child(4) div:last-child {
+        width: 100%;
+        display: block;
+        padding: 10px 15px;
+    }
+    .row:nth-child(3) div:first-child div,
+    .row:nth-child(4) div:first-child div,
+    .row:nth-child(3) div:last-child div,
+    .row:nth-child(4) div:last-child div {
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer div:last-child {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

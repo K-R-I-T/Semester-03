@@ -1,0 +1,32 @@
+CREATE TABLE Departments(
+	DepID VARCHAR(10) PRIMARY KEY,
+	DepName NVARCHAR(40),
+	DepDescription NVARCHAR(300)
+)
+GO
+
+CREATE TABLE Lectures(
+	LecID VARCHAR(10) PRIMARY KEY,
+	FirstName NVARCHAR(30),
+	LastName NVARCHAR(30),
+	BirthDate DATE,
+	DepID VARCHAR(10) FOREIGN KEY REFERENCES dbo.Departments(DepID)
+)
+GO
+
+CREATE TABLE Subjects(
+	SubID VARCHAR(10) PRIMARY KEY,
+	SubName NVARCHAR(80),
+	NumberOfPeriods INT,
+	SubDescription NVARCHAR(200)
+)
+GO
+
+CREATE TABLE Lecture(
+	Semester NVARCHAR(30),
+	SchoolYear VARCHAR(11),
+	LecID VARCHAR(10) FOREIGN KEY REFERENCES dbo.Lectures(LecID),
+	SubID VARCHAR(10) FOREIGN KEY REFERENCES dbo.Subjects(SubID),
+	PRIMARY KEY(LecID, SubID)
+)
+GO

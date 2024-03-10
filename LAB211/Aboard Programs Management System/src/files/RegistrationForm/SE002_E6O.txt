@@ -1,0 +1,10 @@
+				 Aboard Program Registration Form
+Information Student:
+Student id: SE002   Student name: Nguyen Truong Tho
+Major: SE           Email: thontse002@fpt.edu.vn    Phone: 0987654321    Passport: VN002
+Address: Vinhome 9  Email of the parents: kahukh@gmail.com   Phone of the parents: 0387592125
+Information of the aboard program:
+Program’s id: E6O   Program’s name: English 6 Oversea
+Time: March         Days: 35    Location: Malaysia   Cost: 1500.000000$
+Information of the registration:
+Registration date: 02/02/2023

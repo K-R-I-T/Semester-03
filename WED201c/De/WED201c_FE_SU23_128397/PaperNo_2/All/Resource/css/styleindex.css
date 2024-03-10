@@ -1,0 +1,71 @@
+.header {
+    margin-top: 20px;
+}
+
+.h3 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 33px;
+}
+
+.h3 h3 {
+    color: orangered;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.img {
+    text-align: center;
+}
+
+.header img {
+    width: 130px;
+    height: 80px;
+}
+
+.search {
+    margin-top: 45px;
+}
+
+#bs-example-navbar-collapse-1 {
+    margin-left: 33%;
+}
+
+.description h1 {
+    text-align: center;
+    color: lightseagreen;
+}
+
+.description p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.images div:first-child img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+    color: lightseagreen;
+}
+
+.container h3 {
+    color: orange;
+}
+
+.text {
+    text-align: justify;
+}
+
+.text p {
+    line-height: 25px;
+}
+
+.footer {
+    text-align: center;
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px;
+}

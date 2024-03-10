@@ -1,0 +1,70 @@
+Aboard Program Registration System
+- Yêu cầu đăng nhập staff
+- 4 function:
+	- Manage aboard program
+	- Manage student
+	- Register a program for a student
+	- Report
+
++ Fun1:
+	+ Display all aboard programs
+		+ information: ID and Name: id-name, Time: n batches(...), Day, Location:..., Cost, Content
+	+ Add a new aboard program
+		+ Id: unique, not empty
+		+ Name: not empty
+		+ Time: count batches, only accept as: January, March, May, July, September, November
+		+ From Registration Date: Begin date to register
+		+ End Registration Date: End date to register
+		+ Days: From 30 to 40 days
+		+ Location: Not empty
+		+ Cost: not empty
+		+ Content: not empty, only enter the path of the file (.doc or .pdf)
+	+ Edit information a program by id
+		+ Enter program's id, allow edit its detail (expect its id)
+	+ Search and display a program by id
+		+ Enter program's id, display information of this program
+	+ Back to main menu
++ Fun2:
+	+ Display all student
+		+ Display detail of students as the following:
+		+ ID	NAME	MAJOR	EMAIL			PHONE	PASSPORT	ADDRESS
+		+ SE123	abc	SE	abcSE123@fpt.edu.vn	123	VN12345		1/1 abc
+	+ Add a new student
+		+ Enter student detail, add to student list
+	+ Edit information a student by id
+		+ Enter student's id and user can edit all fields of this student expect the student's id
+		+ ID: not duplicate, not empty
+		+ name: not empty
+		+ major: only accept as: SE, SB, GD, MC
+		+ email: contains "@fpt.edu.vn"
+		+ phone: not empty
+		+ passport: not empty
+		+ address: not empty
+	+ Back to main menu
++ Fun3:
+	+ Folder named "RegistrationForm", saved all text files that are the result of the function registration
+	+ Enter program's id, student's id
+	+ if exist, enter Registration date:, Email of the parents:, Phone of the parents:
+	+ Validation:
+		+ registraion date must be between begin and end of the program's registration date
+		+ email, phone not empty
+		+ error occur: message will display
+	+ The result of the registration will save to the text file (.doc or .txt) that is named as "“StudentID_ProgramID.doc”
+	+					 Aboard Program Registration Form
+		Information Student:
+		Student id: SE123 	Student name: Thi No
+		Major: SE 		Email: NotSE123@fpt.edu.vn 	Phone:12345 	Passport:VN123
+		Address: 1/1 ABC 	Email of the parents: ChiPheo@gmail.com 	Phone of the parents:123
+		Information of the aboard program:
+		Program’s id: E60 	Program’s name: English 6 oversea
+		Time: March 		Days: 30 	Location: Malaysia 	Cost:1000$
+		Information of the registration:
+		registration date: 12/4/2023
++ Fun4:
+	+ Print out the registration by student's id
+		+ Enter student's id, display the content of the text file whose filename contains the entered id
+	+ Print out the students that registered more than 2 programs
+		+ Display information of the students that have more than 2 text files in the RegistrationForm folder
+	+ Count students that registered the program
+		+ Enter program's id, print out count of students that registered (count filenames that contains the entered id)
+	+ Back to main menu

@@ -1,0 +1,11 @@
+td:not(td:nth-child(2)) {
+    padding: 10px 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    margin-left: 20px;
+}

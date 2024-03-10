@@ -1,0 +1,88 @@
+header {
+    background-color: green;
+    height: 100px;
+    font-size: x-large;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul li {
+    float: right;
+    list-style-type: none;
+    border: 1px;
+    background-color: lightgreen;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.aboutme form table {
+    display: block;
+}
+
+.aboutme {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.howtogrow {
+    justify-content: center;
+    display: flex;
+}
+
+.howtogrow p {
+    float: left;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 300px;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.howtogrow p::first-letter {
+    font-weight: bold;
+}
+
+.left {
+    float: left;
+    width: 40%;
+}
+
+.left #bigImg {
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.right {
+    float: right;
+    width: 60%;
+}
+
+.right img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    clear: both;
+    background-color: lightblue;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer p::first-letter {
+    font-weight: bold;
+}
